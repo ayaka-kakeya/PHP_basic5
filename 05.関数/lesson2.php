@@ -18,7 +18,7 @@ $newyear=new DateTime('2020-01-01');
 $day1=$newyear->diff($today);
 $day2=$day1->format('%a');
 
-echo '・現在日時('.date($format1).'('.$week[date(w)].'曜日))<br>';
+echo '・現在日時('.date($format1).'('.$week[date('w')].'曜日))<br>';
 echo '・現在日時から3日後('.date($format2,strtotime('3 day')).')<br>';
 echo '・現在日時から12時間前('.date($format2,strtotime('-12 hour')).')<br>';
 echo '・2020年元旦から現在までの経過日数('.$day2.'日)';
